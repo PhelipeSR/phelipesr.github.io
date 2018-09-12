@@ -8,5 +8,6 @@ body {
 	background-color: #68deae !important;
 }
 .card-header {
-    background-color: hsla(156, 64%, 64%, 0.6);
+    background-color: rgba(23, 162, 184, 0.66);
+    color: white;
 }

@@ -547,9 +547,9 @@ $(document).ready(function($) {
 
 		// Arquivos CSS externos
 		content_css: [
-			'//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
 			'//stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css',
 		],
+		content_style: ".mce-content-body {font-size:15px;font-family:Arial,sans-serif;}",
 
 		// Configurações do plugin Imagem
 		image_caption: true, // adiciona opção de legenda para imagem

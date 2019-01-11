@@ -262,6 +262,155 @@ function add_quadro_2(){
 	$('.slide').slideDown(300);
 }
 
+function add_materiais(){
+	var html = `
+		<div class="slide bg-light p-3 border mb-3" style="display:none">
+			<div class="float-right">
+				<span title="Deletar" class="text-danger remove_source" style="cursor: pointer;"><i class="fas fa-times-circle fa-sm"></i></span>
+			</div>
+			<div class="clearfix"></div>
+			<div class="form-row">
+				<div class="form-group col-md-12">
+					<label>Público Alvo</label>
+					<input type="text" class="form-control">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col">
+					<label>Tipo</label><br>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="virtual_materiais_1" name="tipo_materiais_1" class="custom-control-input">
+						<label class="custom-control-label" for="virtual_materiais_1">Virtual</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="impresso_materiais_1" name="tipo_materiais_1" class="custom-control-input">
+						<label class="custom-control-label" for="impresso_materiais_1">Impresso</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col">
+					<label>Acesso</label><br>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="restrito_materiais_1" name="acesso_materiais_1" class="custom-control-input">
+						<label class="custom-control-label" for="restrito_materiais_1">Restrito</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="livre_materiais_1" name="acesso_materiais_1" class="custom-control-input">
+						<label class="custom-control-label" for="livre_materiais_1">livre</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col">
+					<label>Disponibilidade</label><br>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="midia_materiais_1" name="disponibilidade_materiais_1" class="custom-control-input">
+						<label class="custom-control-label" for="midia_materiais_1">Mídia Digital</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="impresso_materiais_1_" name="disponibilidade_materiais_1" class="custom-control-input">
+						<label class="custom-control-label" for="impresso_materiais_1_">Impresso</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="link_materiais_1" name="disponibilidade_materiais_1" class="custom-control-input">
+						<label class="custom-control-label" for="link_materiais_1">Link URL</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col">
+					<label>Pode Ser Compartilhado Com Outras IES</label><br>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="sim_materiais_1" name="compartilhado_materiais_1" class="custom-control-input">
+						<label class="custom-control-label" for="sim_materiais_1">Sim</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="nao_materiais_1" name="compartilhado_materiais_1" class="custom-control-input">
+						<label class="custom-control-label" for="nao_materiais_1">Não</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col">
+					<label>Descreva os Impáctos Desta Ação</label>
+					<textarea class="form-control" rows="3"></textarea>
+				</div>
+			</div>
+		</div>
+	`;
+	$('#cont_materiais').append(html);
+	$('.slide').slideDown(300);
+}
+
+function add_softwares(){
+	var html = `
+		<div class="slide bg-light p-3 border mb-3" style="display:none">
+			<div class="float-right">
+				<span title="Deletar" class="text-danger remove_source" style="cursor: pointer;"><i class="fas fa-times-circle fa-sm"></i></span>
+			</div>
+			<div class="clearfix"></div>
+			<div class="form-row">
+				<div class="form-group col-md-12">
+					<label>Público Alvo</label>
+					<input type="text" class="form-control">
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col">
+					<label>Acesso</label><br>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="restrito_software_1" name="acesso_software_1" class="custom-control-input">
+						<label class="custom-control-label" for="restrito_software_1">Restrito</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="livre_software_1" name="acesso_software_1" class="custom-control-input">
+						<label class="custom-control-label" for="livre_software_1">livre</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col">
+					<label>Disponibilidade</label><br>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="midia_software_1" name="disponibilidade_software_1" class="custom-control-input">
+						<label class="custom-control-label" for="midia_software_1">Mídia Digital</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="impresso_software_1" name="disponibilidade_software_1" class="custom-control-input">
+						<label class="custom-control-label" for="impresso_software_1">Impresso</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="link_software_1" name="disponibilidade_software_1" class="custom-control-input">
+						<label class="custom-control-label" for="link_software_1">Link URL</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col">
+					<label>Pode Ser Compartilhado Com Outras IES</label><br>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="sim_software_1" name="compartilhado_software_1" class="custom-control-input">
+						<label class="custom-control-label" for="sim_software_1">Sim</label>
+					</div>
+					<div class="custom-control custom-radio custom-control-inline">
+						<input type="radio" id="nao_software_1" name="compartilhado_software_1" class="custom-control-input">
+						<label class="custom-control-label" for="nao_software_1">Não</label>
+					</div>
+				</div>
+			</div>
+			<div class="form-row">
+				<div class="form-group col">
+					<label>Descreva os Impáctos Desta Ação</label>
+					<textarea class="form-control" rows="3"></textarea>
+				</div>
+			</div>
+		</div>
+	`;
+	$('#cont_softwares').append(html);
+	$('.slide').slideDown(300);
+}
+
 $(document).ready(function($) {
 
 	var step = 1;
@@ -360,6 +509,16 @@ $(document).ready(function($) {
 	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	$('#btn_add_quadro_2').click(function(event) {
 		add_quadro_2();
+	});
+
+	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+	// Insere mais um item em Recursos
+	// =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+	$('#btn_add_materiais').click(function(event) {
+		add_materiais();
+	});
+	$('#btn_add_softwares').click(function(event) {
+		add_softwares();
 	});
 
 
